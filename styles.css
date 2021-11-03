@@ -1,0 +1,284 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700; 900; &display=swap');
+
+
+
+*{
+    /*remove borders and padding*/
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    background-color: black;
+}
+
+
+.mobilelogo{
+    display:none;
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        display: none;
+    }
+
+    .mobilelogo{
+        display: block;
+        margin-left: 20px;
+    }
+    
+}
+
+img{
+    /* max width of the body */
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+
+}
+
+
+/* utilities */
+
+
+/* menu */
+nav.menu{
+   background-color:white;
+   height:50px; 
+/* only effects children*/
+   display: flex;
+ /* puts space between logo and icons*/
+   justify-content: space-between;
+/* center items vertically in nav bar*/
+   align-items:center;
+}
+
+img.logo{
+    height: 35px;
+    margin-left: 20px;
+    
+}
+
+.icon-login{
+    text-transform: uppercase;
+    font: size 10px;
+    font-weight:700;
+    letter-spacing: 2px;
+    color:black;
+    margin-right: 20px;
+}
+
+.icon-subscribe{
+    text-transform: uppercase;
+    font: size 10px;
+    font-weight: 700;
+    color:white;
+    letter-spacing: 2px;
+    background-color: black;
+    padding:16px;
+    margin-right:20px;
+
+    /* background: linear-gradient(to right, black 50%, #fc0 50%);
+    background-size: 200%; */
+    
+   
+}
+
+.icon-subscribe:hover{
+     color: black;
+    /*background-position:right; */
+    box-shadow: inset 200px 0 0 0 #fc0;
+    transition: .5s;
+}
+
+.fa-search, .icon-renew, .icon-menu{
+    display: none;
+    margin-right: 20px;
+}
+
+.fa-angle-double-down{
+    margin-right:20px;
+    
+}
+
+.fa-angle-double-down:hover{
+   font-weight: normal;
+    transition: ease-in 3s;
+}
+
+/* header */
+header{
+    height:230px;
+    color: white;
+    text-align:center;
+    
+}
+
+header h1{
+    text-transform: uppercase;
+    margin: 40px;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    
+}
+
+header p{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    
+}
+
+header p span{
+    border-bottom: #fc0 solid 2px;
+    line-height: 2;
+    
+   
+}
+
+header p span:hover{
+    color: black;
+    background-color: #fc0;
+    box-shadow: inset 0 -40px 0 -1px #fc0;
+}
+
+.linebreak{
+    border-bottom: #fc0 solid 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+    margin-top: 20px;
+}
+/* main news */
+
+main{
+    margin-left:auto;
+    margin-right:auto;
+    width:93%;
+}
+
+.main-news{
+    position: relative; /* Parent/Container should be relative*/
+    
+}
+
+.main-news-text{ 
+    color: white;
+    position: absolute;
+    top: 100px;
+    left:20px;
+}
+
+.main-news-text h3{
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.main-news-text p.text{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.main-news-text .read-text, .secondary-news-text .read-text{
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+}
+.secondary-news-text{
+    background-color: white;
+    height: 135px;
+    margin-top: -10px;
+    padding:20px;
+    margin-bottom: 20px;
+}
+
+.secondary-news-text p.text{
+    font-size:20px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    font-weight: 700;
+}
+
+.secondary-news-text h3{
+    color: rgb(61, 60, 60);
+    text-transform: uppercase;
+    font-size:12px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+}
+
+.secondary-news-text .read-text{
+    font-weight:800;
+}
+
+/* picks section */
+
+
+.picks-container h2{
+    color: white;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    font-size: 31px;
+    border-left: 5px solid #fc0; 
+    padding-left: 10px;
+    margin-bottom: 20px;
+    
+    
+  
+}
+
+.pick-element{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pick-element img{
+    width: 100px;
+    height: 100px;
+   
+    
+
+}
+
+.pick-element-text{
+    color:white;
+    flex-basis:350px;
+    margin-left:15px;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.pick-element-text h3{
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+
+.see-more h3{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: solid 5px #fc0;
+;
+    
+    
+}
